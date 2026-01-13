@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Bug Bounty Recon Script",
+        "description": "Automated security script written in Python for gathering subdomains from various sources and testing for live hosts.",
+        "technologies": ["Python"],
+        "github": "https://github.com/d0ughb0yy/pyWebRecon"
+    },
+    {
+        "title": "SIEM Dashboard",
+        "description": "Built a custom SIEM dashboard for real-time log analysis, threat detection, and simulated attacks to monitor in real-time.",
+        "technologies": ["ELK Stack", "Suricata", "KQL"],
+        "github": "https://github.com/d0ughb0yy/elk-stack-project"
+    },
+    {
+        "title": "Go File Analyzer",
+        "description": "Program checks if the file type matches the extension and uploads it to VirusTotal to check the health.",
+        "technologies": ["Golang"],
+        "github": "https://github.com/d0ughb0yy/goFileAnalysis"
+    }
+]
