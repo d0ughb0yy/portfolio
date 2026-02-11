@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tin Lučić - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-WEYR93RSF2"></script>
     <script>
@@ -14,10 +17,19 @@
     </script>
 </head>
 <body>
+    <div class="animated-bg"></div>
     <!-- Header -->
     <header>
         <nav class="container">
-            <div class="logo">Tin Lučić</div>
+            <a href="#" class="logo">Tin Lučić</a>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <svg class="hamburger-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+                <svg class="close-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -32,12 +44,10 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <div class="hero-image">
-                    <img src="img/person.png" alt="Your Name">
-                </div>
                 <div class="hero-text">
                     <h1>Hi, I'm Tin</h1>
-                    <p>Ethical web hacker and cybersecurity analyst experienced in SIEM monitoring and web application security practices.</p>
+                    <h2 class="hero-subtitle">Ethical Web Hacker & Cybersecurity Analyst</h2>
+                    <p class="hero-description">Experienced in SIEM monitoring and web application security practices.</p>
                     <a href="#contact" class="cta-button">Get In Touch</a>
                 </div>
             </div>
@@ -50,10 +60,10 @@
             <h2>About Me</h2>
             <div class="about-content">
                 <p>I am a dedicated cybersecurity professional based in Pula, Croatia. 
-                    My main expertise is in SIEM monitoring, threat analysis and web application security. 
+                    My expertise is focused on web application security and threat monitoring. 
                     My passion lies in identifying vulnerabilities and helping mitigate them to protect organizations from threat actors.
                 </p>
-                <p>With beginner experience in both offensive and defensive security practices, 
+                <p>With junior experience in both offensive and defensive security practices, 
                     I bring a comprehensive approach to cybersecurity that helps organizations stay ahead of potential threats while maintaining operational efficiency.
                 </p>
             </div>
@@ -67,16 +77,26 @@
             <div class="skills-grid" id="skills-container">
                 <!-- Skills template - duplicate and fill in -->
                 <div class="skill-item">
-                    <h3 class="skill-name">Penetration Testing</h3>
+                    <div class="skill-header">
+                        <h3 class="skill-name">Penetration Testing</h3>
+                    </div>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar" data-skill="75"></div>
+                    </div>
                     <p class="skill-description">Intermediate in security assessments and vulnerability identification.</p>
                     <div class="skill-tools">
-                        <span class="tool-pill">Privilege Escalation Techniques</span>
+                        <span class="tool-pill">Privilege Escalation</span>
                         <span class="tool-pill">Active Directory</span>
                         <span class="tool-pill">Linux Security</span>
                     </div>
                 </div>
                 <div class="skill-item">
-                    <h3 class="skill-name">Threat Detection</h3>
+                    <div class="skill-header">
+                        <h3 class="skill-name">Threat Detection</h3>
+                    </div>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar" data-skill="60"></div>
+                    </div>
                     <p class="skill-description">Beginner in monitoring and incident response capabilities.</p>
                     <div class="skill-tools">
                         <span class="tool-pill">Wazuh</span>
@@ -85,43 +105,59 @@
                     </div>
                 </div>
                 <div class="skill-item">
-                    <h3 class="skill-name">Network Security</h3>
+                    <div class="skill-header">
+                        <h3 class="skill-name">Network Security</h3>
+                    </div>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar" data-skill="55"></div>
+                    </div>
                     <p class="skill-description">Beginner in securing network infrastructure and communications.</p>
                     <div class="skill-tools">
                         <span class="tool-pill">Suricata IDS/IPS</span>
                         <span class="tool-pill">pfSense</span>
                         <span class="tool-pill">Wireshark</span>
-                        
                     </div>
                 </div>
                 <div class="skill-item">
-                    <h3 class="skill-name">Security Automation</h3>
+                    <div class="skill-header">
+                        <h3 class="skill-name">Security Automation</h3>
+                    </div>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar" data-skill="70"></div>
+                    </div>
                     <p class="skill-description">Scripting and automation for security operations.</p>
                     <div class="skill-tools">
                         <span class="tool-pill">Python</span>
                         <span class="tool-pill">Bash</span>
                         <span class="tool-pill">Golang</span>
-                        
                     </div>
                 </div>
                 <div class="skill-item">
-                    <h3 class="skill-name">Email Security</h3>
+                    <div class="skill-header">
+                        <h3 class="skill-name">Email Security</h3>
+                    </div>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar" data-skill="50"></div>
+                    </div>
                     <p class="skill-description">Beginner in phishing email analysis.</p>
                     <div class="skill-tools">
                         <span class="tool-pill">VirusTotal</span>
                         <span class="tool-pill">AnyRun</span>
-                        <span class="tool-pill">Email Header Analysis</span>
-                        
-                </div>
+                        <span class="tool-pill">Email Analysis</span>
+                    </div>
                 </div>
                 <div class="skill-item">
-                    <h3 class="skill-name">Web Security</h3>
+                    <div class="skill-header">
+                        <h3 class="skill-name">Web Security</h3>
+                    </div>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar" data-skill="80"></div>
+                    </div>
                     <p class="skill-description">Intermediate in web security concepts and vulnerabilities.</p>
                     <div class="skill-tools">
                         <span class="tool-pill">Burpsuite</span>
                         <span class="tool-pill">OWASP Top10</span>
-                        <span class="tool-pill">Source code analysis</span>
-                        
+                        <span class="tool-pill">Source Analysis</span>
                     </div>
                 </div>
             </div>
@@ -156,7 +192,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 Your Name. All rights reserved.</p>
+            <p>&copy; 2026 Tin Lučić. All rights reserved.</p>
         </div>
     </footer>
     <script src="js/index.js"></script>
