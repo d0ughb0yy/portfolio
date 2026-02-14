@@ -424,15 +424,20 @@ section h2 {
     background-color: var(--bg-hover);
 }
 
-.github-icon {
+.github-link svg {
     width: 28px;
     height: 28px;
-    filter: brightness(0) invert(1);
+    color: var(--text);
+    transition: color 0.3s;
+}
+
+.github-link:hover svg {
+    color: var(--primary);
 }
 
 /* Contact */
 #contact h2 {
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 }
 
 .contact-content {
@@ -443,7 +448,7 @@ section h2 {
 
 .contact-content > p {
     color: var(--text-muted);
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 10px;
 }
 
@@ -455,14 +460,16 @@ section h2 {
 }
 
 .contact-links a {
-    color: var(--primary);
+    color: var(--text);
     text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 12px 24px;
-    border: 1px solid var(--border);
-    border-radius: 8px;
     transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border: 1px solid var(--border);
+    border-radius: 50%;
     background: var(--bg-card);
 }
 
@@ -470,6 +477,11 @@ section h2 {
     border-color: var(--primary);
     background: rgba(96, 165, 250, 0.1);
     transform: translateY(-2px);
+    color: var(--primary);
+}
+
+.contact-icon svg {
+    display: block;
 }
 
 /* Footer */
@@ -615,13 +627,21 @@ footer p {
     }
 
     .contact-links {
-        flex-direction: column;
-        gap: 12px;
+        flex-direction: row;
+        gap: 16px;
+        align-items: center;
+        justify-content: center;
     }
 
     .contact-links a {
-        width: 100%;
-        max-width: 280px;
+        width: 48px;
+        height: 48px;
+        padding: 0;
+    }
+
+    .contact-links a svg {
+        width: 24px;
+        height: 24px;
     }
 }
 
