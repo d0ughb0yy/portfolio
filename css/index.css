@@ -448,7 +448,7 @@ section h2 {
 
 .contact-content > p {
     color: var(--text-muted);
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 10px;
 }
 
@@ -620,6 +620,10 @@ footer p {
 
     .skill-name {
         font-size: 18px;
+    }
+
+    .contact-content > p {
+        font-size: 16px;
     }
 
     .projects-grid {
