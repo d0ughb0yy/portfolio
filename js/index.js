@@ -24,6 +24,127 @@ async function loadProjects() {
         
         container.appendChild(card);
     });
+
+    // Initialize carousel after projects are loaded
+    initCarousel();
+}
+
+// Carousel functionality
+function initCarousel() {
+    const track = document.querySelector('.carousel-track');
+    const prevBtn = document.querySelector('.carousel-prev');
+    const nextBtn = document.querySelector('.carousel-next');
+    const dotsContainer = document.getElementById('carousel-dots');
+    
+    let cards = track.querySelectorAll('.project-card');
+    if (cards.length === 0) return;
+
+    // Clone first and last cards for smooth looping
+    const firstCard = cards[0].cloneNode(true);
+    const lastCard = cards[cards.length - 1].cloneNode(true);
+    
+    track.appendChild(firstCard);
+    track.insertBefore(lastCard, cards[0]);
+
+    // Get all cards including clones
+    cards = track.querySelectorAll('.project-card');
+    const totalSlides = cards.length; // includes 2 clones
+    
+    // Real projects start at index 1 (after the cloned last)
+    let currentSlide = 1; 
+    const isTransitioning = false;
+
+    // Create dots - only for real projects (not clones)
+    const realProjectCount = totalSlides - 2;
+    for (let i = 0; i < realProjectCount; i++) {
+        const dot = document.createElement('button');
+        dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+        dot.addEventListener('click', () => goToSlide(i + 1));
+        dotsContainer.appendChild(dot);
+    }
+
+    const dots = dotsContainer.querySelectorAll('.carousel-dot');
+
+    function updateCarousel(animate = true) {
+        const slideWidth = 100;
+        
+        if (!animate) {
+            track.style.transition = 'none';
+        } else {
+            track.style.transition = 'transform 0.4s ease';
+        }
+        
+        track.style.transform = `translateX(-${currentSlide * slideWidth}%)`;
+        
+        // Update dots - map to real slides (index 1 = dot 0, etc.)
+        dots.forEach((dot, index) => {
+            dot.classList.toggle('active', index === currentSlide - 1);
+        });
+        
+        // After transition completes, check if we need to jump
+        if (animate) {
+            setTimeout(() => {
+                // If we're on the cloned first (last position), jump to real first
+                if (currentSlide === totalSlides - 1) {
+                    currentSlide = 1;
+                    updateCarousel(false);
+                }
+                // If we're on the cloned last (first position), jump to real last
+                else if (currentSlide === 0) {
+                    currentSlide = totalSlides - 2;
+                    updateCarousel(false);
+                }
+            }, 400);
+        }
+    }
+
+    function goToSlide(index) {
+        currentSlide = index;
+        updateCarousel(true);
+    }
+
+    function nextSlide() {
+        currentSlide++;
+        updateCarousel(true);
+    }
+
+    function prevSlide() {
+        currentSlide--;
+        updateCarousel(true);
+    }
+
+    // Event listeners
+    nextBtn.addEventListener('click', nextSlide);
+    prevBtn.addEventListener('click', prevSlide);
+
+    // Touch/swipe support
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    track.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+
+    track.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+    }, { passive: true });
+
+    function handleSwipe() {
+        const swipeThreshold = 50;
+        const diff = touchStartX - touchEndX;
+        
+        if (Math.abs(diff) > swipeThreshold) {
+            if (diff > 0) {
+                nextSlide();
+            } else {
+                prevSlide();
+            }
+        }
+    }
+
+    // Initial setup - start at first real slide (index 1)
+    updateCarousel(false);
 }
 
 // Load projects when page loads

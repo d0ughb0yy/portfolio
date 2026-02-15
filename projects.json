@@ -16,5 +16,11 @@
         "description": "Program checks if the file type matches the extension and uploads it to VirusTotal to check the health.",
         "technologies": ["Golang"],
         "github": "https://github.com/d0ughb0yy/goFileAnalysis"
+    },
+    {
+        "title": "Python Password Manager",
+        "description": "A simple and secure CLI password manager using AES-256-CBC.",
+        "technologies": ["Python", "Cryptography"],
+        "github": "https://github.com/d0ughb0yy/pyPasswordVault"
     }
 ]

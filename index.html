@@ -12,12 +12,12 @@
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="manifest" href="img/site.webmanifest">
     <link rel="stylesheet" href="css/index.css">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WEYR93RSF2"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-85LCPHN1P8"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('ks', new Date());
-        gtag('config', 'G-WEYR93RSF2')
+        gtag('config', 'G-85LCPHN1P8')
     </script>
 </head>
 <body>
@@ -172,9 +172,24 @@
     <section id="projects">
         <div class="container">
             <h2>Projects</h2>
-            <div class="projects-grid" id="projects-container">
-                <!-- Projects will be dynamically loaded here -->
+            <div class="carousel-container">
+                <button class="carousel-arrow carousel-prev" aria-label="Previous projects">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m15 18-6-6 6-6"/>
+                    </svg>
+                </button>
+                <div class="carousel-wrapper">
+                    <div class="carousel-track" id="projects-container">
+                        <!-- Projects will be dynamically loaded here -->
+                    </div>
+                </div>
+                <button class="carousel-arrow carousel-next" aria-label="Next projects">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m9 18 6-6-6-6"/>
+                    </svg>
+                </button>
             </div>
+            <div class="carousel-dots" id="carousel-dots"></div>
         </div>
     </section>
 
