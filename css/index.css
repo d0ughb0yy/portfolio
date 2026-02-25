@@ -1,10 +1,14 @@
-/* Space Grotesk font is imported via link in HTML */
+/* Poppins & Space Grotesk fonts imported via Google Fonts in HTML */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* ============================================
+   Base Styles & Variables
+   ============================================ */
 
 :root {
     --bg: #0f172a;
@@ -21,7 +25,7 @@
 }
 
 body {
-    font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
     line-height: 1.6;
     color: var(--text);
     background: var(--bg);
@@ -61,7 +65,10 @@ h1, h2, h3, .project-title, .skill-name, .logo {
     padding: 0 20px;
 }
 
-/* Header */
+/* ============================================
+   Header & Navigation
+   ============================================ */
+
 header {
     padding: 16px 0;
     border-bottom: 1px solid var(--border);
@@ -103,6 +110,7 @@ nav {
     text-decoration: none;
     transition: color 0.3s;
     font-weight: 500;
+    font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 .nav-links a:hover {
@@ -141,7 +149,10 @@ body.menu-open {
     overflow: hidden;
 }
 
-/* Hero */
+/* ============================================
+   Hero Section
+   ============================================ */
+
 .hero {
     padding: 80px 0;
     text-align: center;
@@ -206,7 +217,10 @@ body.menu-open {
     box-shadow: 0 10px 30px rgba(96, 165, 250, 0.3);
 }
 
-/* Section */
+/* ============================================
+   Sections
+   ============================================ */
+
 section {
     padding: 80px 0;
 }
@@ -219,7 +233,10 @@ section h2 {
     letter-spacing: -0.5px;
 }
 
-/* Alternating section backgrounds for visual rhythm */
+/* ============================================
+   About Section
+   ============================================ */
+
 #about {
     background: #111827;
     border-top: 1px solid #1e293b;
@@ -251,7 +268,10 @@ section h2 {
     line-height: 1.8;
 }
 
-/* Skills */
+/* ============================================
+   Skills Section
+   ============================================ */
+
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -283,12 +303,6 @@ section h2 {
     font-size: 20px;
     font-weight: 600;
     color: var(--text);
-}
-
-.skill-percentage {
-    font-size: 16px;
-    font-weight: 600;
-    color: var(--accent);
 }
 
 .skill-bar-container {
@@ -336,7 +350,10 @@ section h2 {
     background: rgba(96, 165, 250, 0.1);
 }
 
-/* Projects Carousel */
+/* ============================================
+   Projects Carousel
+   ============================================ */
+
 .carousel-container {
     position: relative;
     max-width: 1200px;
@@ -454,16 +471,6 @@ section h2 {
     min-height: 280px;
 }
 
-.project-image {
-    width: 100%;
-    height: 200px;
-    background: var(--border);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--text-muted);
-}
-
 .project-content {
     padding: 30px;
     text-align: center;
@@ -542,7 +549,10 @@ section h2 {
     color: var(--primary);
 }
 
-/* Contact */
+/* ============================================
+   Contact Section
+   ============================================ */
+
 #contact h2 {
     margin-bottom: 16px;
 }
@@ -591,7 +601,10 @@ section h2 {
     display: block;
 }
 
-/* Footer */
+/* ============================================
+   Footer
+   ============================================ */
+
 footer {
     padding: 30px 0;
     text-align: center;
@@ -604,7 +617,10 @@ footer p {
     font-size: 14px;
 }
 
-/* Responsive */
+/* ============================================
+   Responsive Styles
+   ============================================ */
+
 @media (max-width: 768px) {
     header {
         position: sticky;
@@ -697,7 +713,11 @@ footer p {
 }
 
 @media (max-width: 500px) {
-    .container {
+/* ============================================
+   Layout
+   ============================================ */
+
+.container {
         padding: 0 15px;
     }
 
@@ -731,10 +751,6 @@ footer p {
 
     .contact-content > p {
         font-size: 16px;
-    }
-
-    .projects-grid {
-        grid-template-columns: 1fr;
     }
 
     .contact-links {

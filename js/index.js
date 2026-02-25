@@ -52,7 +52,6 @@ function initCarousel() {
     
     // Real projects start at index 1 (after the cloned last)
     let currentSlide = 1; 
-    const isTransitioning = false;
 
     // Create dots - only for real projects (not clones)
     const realProjectCount = totalSlides - 2;
