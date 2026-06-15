@@ -15,7 +15,8 @@ title = "Tin Lucic"
 
 [params]
   description = "Web security researcher & cybersecurity professional"
-  ga_id = "G-XXXXXXXXXX"
+  ga_id = "G-VLKCM69DQJ"
+  blog_ga_id = "G-54X9GXJEP9"
 
 [[menu.main]]
   name = "Home"

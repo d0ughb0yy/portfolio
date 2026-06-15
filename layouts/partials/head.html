@@ -22,5 +22,8 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', '{{ .Site.Params.ga_id }}');
+  {{ if and .Site.Params.blog_ga_id (hasPrefix .RelPermalink "/blog/") -}}
+  gtag('config', '{{ .Site.Params.blog_ga_id }}');
+  {{ end -}}
 </script>
 {{ end -}}
