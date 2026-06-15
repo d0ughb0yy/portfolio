@@ -1,0 +1,407 @@
+{{ define "main" }}
+<section id="hero" class="hero">
+  <div class="container hero-content">
+    <div class="hero-glow" aria-hidden="true"></div>
+
+    <p class="hero-greeting">Hello, I'm</p>
+    <h1 class="hero-name">
+      <span class="typewriter" data-text="TIN LUČIĆ" id="typewriter"></span>
+    </h1>
+    <p class="hero-headline">
+      <span id="role-rotate"></span>
+    </p>
+    <p class="hero-description">
+      Web application security researcher and bug bounty hunter
+      with 3 years of experience in identifying critical
+      vulnerabilities in web applications.
+    </p>
+
+    <div class="hero-actions">
+      <a href="/blog" class="btn btn-primary">
+        View Blog
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path d="M3 8h10M9 4l4 4-4 4" />
+        </svg>
+      </a>
+      <a href="#contact" class="btn btn-ghost">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" aria-hidden="true">
+          <path d="M4 4h8M4 8h6M2 12V5a3 3 0 013-3h6a3 3 0 013 3v7" />
+          <polyline points="4 12 2 12 2 14h8v-2z" />
+        </svg>
+        Get In Touch
+      </a>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-indicator" aria-label="Scroll to About section">
+    <div class="scroll-arrow"></div>
+  </a>
+</section>
+
+<section id="about" class="section">
+  <div class="container">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-grid">
+      <div class="about-main">
+        <p>
+          I'm a web application security specialist with
+          expertise in web penetration testing and threat
+          monitoring.
+        </p>
+        <p>
+          I help organizations strengthen their security
+          posture through vulnerability identification and
+          strategic mitigation.
+        </p>
+        <p>
+          Based in Pula, Croatia, I'm committed to continuous
+          learning and professional development in this
+          rapidly evolving field.
+        </p>
+        <a href="/cv/CV_TinLucic.pdf" class="btn btn-primary" download style="margin-top:16px">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" aria-hidden="true">
+            <path d="M14 10v4H2v-4M8 2v9M4 6l4 4 4-4" />
+          </svg>
+          Download CV
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<h2 id="skills" class="section-title">Technical Skills</h2>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="skills-grid">
+      <div class="skill-category">
+        <h3 class="category-title">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 2L2 7l10 5 10-5-10-5z" />
+            <path d="M2 17l10 5 10-5" />
+            <path d="M2 12l10 5 10-5" />
+          </svg>
+          Offensive Security
+        </h3>
+        <div class="skill-list">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 20V10M6 20V4M18 20v-6" />
+              </svg>
+            </div>
+            <strong>Penetration Testing</strong>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="16 18 22 12 16 6" />
+                <polyline points="8 6 2 12 8 18" />
+                <line x1="14" y1="4" x2="10" y2="20" />
+              </svg>
+            </div>
+            <strong>Static Code Analysis</strong>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="2" y1="12" x2="22" y2="12" />
+                <path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" />
+              </svg>
+            </div>
+            <strong>Web Application Hacking</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3 class="category-title">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+          </svg>
+          Defensive Security
+        </h3>
+        <div class="skill-list">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+              </svg>
+            </div>
+            <strong>Incident Response</strong>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                <line x1="8" y1="21" x2="16" y2="21" />
+                <line x1="12" y1="17" x2="12" y2="21" />
+              </svg>
+            </div>
+            <strong>SIEM</strong>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 19.5A2.5 2.5 0 016.5 17H20" />
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z" />
+              </svg>
+            </div>
+            <strong>Secure Network Configuration</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3 class="category-title">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path
+              d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z" />
+          </svg>
+          Tools & Platforms
+        </h3>
+        <div class="skill-list">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path
+                  d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z" />
+              </svg>
+            </div>
+            <strong>Burp Suite / Caido</strong>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                <path d="M12 8v4" />
+                <path d="M12 16h.01" />
+              </svg>
+            </div>
+            <strong>Wazuh</strong>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+              </svg>
+            </div>
+            <strong>Wireshark</strong>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+            </div>
+            <strong>Suricata IDS/IPS</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3 class="category-title">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="16 18 22 12 16 6" />
+            <polyline points="8 6 2 12 8 18" />
+          </svg>
+          Programming & Scripting
+        </h3>
+        <div class="skill-list">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="16 18 22 12 16 6" />
+                <polyline points="8 6 2 12 8 18" />
+                <line x1="14" y1="4" x2="10" y2="20" />
+              </svg>
+            </div>
+            <strong>Python</strong>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="16 18 22 12 16 6" />
+                <polyline points="8 6 2 12 8 18" />
+              </svg>
+            </div>
+            <strong>Bash</strong>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="2" y1="12" x2="22" y2="12" />
+                <path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 014-10z" />
+              </svg>
+            </div>
+            <strong>JavaScript</strong>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 20V10M6 20V4M18 20v-6" />
+              </svg>
+            </div>
+            <strong>Golang</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <div class="container">
+    <h2 class="section-title">Research & Projects</h2>
+
+    <div class="projects-grid">
+      <article class="project-card">
+        <div class="project-header">
+          <span class="severity severity-medium">Tool</span>
+        </div>
+        <h3 class="project-title"><a href="https://github.com/d0ughb0yy/goCmsCheck" target="_blank">CMS Scanner</a></h3>
+        <p class="project-desc">
+          Web scanner that checks for common vulnerabilities
+          and misconfigurations in Wordpress and Drupal web
+          applications.
+        </p>
+        <div class="project-tags">
+          <span class="tag">Golang</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/d0ughb0yy/goCmsCheck" target="_blank" aria-label="GitHub Repository">Github
+            Repository→</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-header">
+          <span class="severity severity-high">Bug Bounty</span>
+        </div>
+        <h3 class="project-title"><a href="/blog/bugbounty/open-redirect-on-login/">Open Redirect on a login page</a>
+        </h3>
+        <p class="project-desc">
+          A job searching application failed to validate the
+          redirect url parameter in the login page.
+        </p>
+        <div class="project-tags">
+          <span class="tag">Open Redirect</span>
+          <span class="tag">Parameter Tampering</span>
+        </div>
+        <div class="project-links">
+          <a href="/blog/bugbounty/open-redirect-on-login/" aria-label="View sanitized writeup">Writeup →</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-header">
+          <span class="severity severity-medium">Tool</span>
+        </div>
+        <h3 class="project-title"><a href="https://github.com/d0ughb0yy/pyWebRecon" target="_blank">pyWebRecon:
+            Automated Bug Bounty Recon Flow</a></h3>
+        <p class="project-desc">
+          CLI reconnaissance tool for automated subdomain
+          enumeration. It integrates 5 security tools into one
+          streamlined workflow.
+        </p>
+        <div class="project-tags">
+          <span class="tag">Python</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/d0ughb0yy/pyWebRecon" target="_blank"
+            aria-label="View source code on GitHub">GitHub Repository →</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-header">
+          <span class="severity severity-high">Bug Bounty</span>
+        </div>
+        <h3 class="project-title"><a href="/blog/bugbounty/reflected-xss-corporate-marketing-site/">Reflected XSS in a
+            search bar</a></h3>
+        <p class="project-desc">
+          A corporate marketing site did not validate user
+          input inside of an URL parameter. I was able to
+          inject JavaScript directly into &lt;html&gt; tags.
+        </p>
+        <div class="project-tags">
+          <span class="tag">XSS</span>
+          <span class="tag">Reflected XSS</span>
+          <span class="tag">Vulnerability Research</span>
+        </div>
+        <div class="project-links">
+          <a href="/blog/bugbounty/reflected-xss-corporate-marketing-site/" aria-label="View sanitized writeup">Writeup
+            →</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<h2 class="section-title">Contact Me!</h2>
+
+<section id="contact" class="section section-alt">
+  <div class="container">
+    <p class="contact-intro">
+      Feel free to reach out for collaborations or job offers!
+    </p>
+
+    <div class="contact-methods">
+      <a href="mailto:tin.lucic172@gmail.com" class="contact-method">
+        <div class="contact-method-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="4" width="20" height="16" rx="2" ry="2" />
+            <path d="M22 7l-10 7L2 7" />
+          </svg>
+        </div>
+      </a>
+
+      <a href="https://linkedin.com/in/tin-lu%C4%8Di%C4%87-367953266/" target="_blank" rel="noopener noreferrer"
+        class="contact-method">
+        <div class="contact-method-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z" />
+            <rect x="2" y="9" width="4" height="12" />
+            <circle cx="4" cy="4" r="2" />
+          </svg>
+        </div>
+      </a>
+
+      <a href="https://github.com/d0ughb0yy" target="_blank" rel="noopener noreferrer" class="contact-method">
+        <div class="contact-method-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path
+              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+          </svg>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+{{ end }}

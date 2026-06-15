@@ -1,0 +1,897 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "opencode.json",
+      "file_type": "code",
+      "source_file": ".opencode/opencode.json",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "opencode_opencode",
+      "community": 5,
+      "norm_label": "opencode.json"
+    },
+    {
+      "label": "$schema",
+      "file_type": "code",
+      "source_file": ".opencode/opencode.json",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "opencode_opencode_schema",
+      "community": 5,
+      "norm_label": "$schema"
+    },
+    {
+      "label": "plugin",
+      "file_type": "code",
+      "source_file": ".opencode/opencode.json",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "opencode_opencode_plugin",
+      "community": 5,
+      "norm_label": "plugin"
+    },
+    {
+      "label": "package.json",
+      "file_type": "code",
+      "source_file": ".opencode/package.json",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "opencode_package",
+      "community": 6,
+      "norm_label": "package.json"
+    },
+    {
+      "label": "dependencies",
+      "file_type": "code",
+      "source_file": ".opencode/package.json",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "opencode_package_dependencies",
+      "community": 6,
+      "norm_label": "dependencies"
+    },
+    {
+      "label": "@opencode-ai/plugin",
+      "file_type": "code",
+      "source_file": ".opencode/package.json",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "opencode_package_dependencies_opencode_ai_plugin",
+      "community": 6,
+      "norm_label": "@opencode-ai/plugin"
+    },
+    {
+      "label": "package.json",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "package",
+      "community": 2,
+      "norm_label": "package.json"
+    },
+    {
+      "label": "name",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "package_name",
+      "community": 2,
+      "norm_label": "name"
+    },
+    {
+      "label": "version",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "package_version",
+      "community": 2,
+      "norm_label": "version"
+    },
+    {
+      "label": "private",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "package_private",
+      "community": 2,
+      "norm_label": "private"
+    },
+    {
+      "label": "scripts",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "package_scripts",
+      "community": 2,
+      "norm_label": "scripts"
+    },
+    {
+      "label": "build:css",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "package_scripts_build_css",
+      "community": 2,
+      "norm_label": "build:css"
+    },
+    {
+      "label": "dev",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "package_scripts_dev",
+      "community": 2,
+      "norm_label": "dev"
+    },
+    {
+      "label": "build",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "package_scripts_build",
+      "community": 2,
+      "norm_label": "build"
+    },
+    {
+      "label": "devDependencies",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "package_devdependencies",
+      "community": 4,
+      "norm_label": "devdependencies"
+    },
+    {
+      "label": "autoprefixer",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "package_devdependencies_autoprefixer",
+      "community": 4,
+      "norm_label": "autoprefixer"
+    },
+    {
+      "label": "postcss",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "package_devdependencies_postcss",
+      "community": 4,
+      "norm_label": "postcss"
+    },
+    {
+      "label": "postcss-cli",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "package_devdependencies_postcss_cli",
+      "community": 4,
+      "norm_label": "postcss-cli"
+    },
+    {
+      "label": "tailwindcss",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "package_devdependencies_tailwindcss",
+      "community": 4,
+      "norm_label": "tailwindcss"
+    },
+    {
+      "label": "postcss.config.js",
+      "file_type": "code",
+      "source_file": "postcss.config.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "postcss_config",
+      "community": 8,
+      "norm_label": "postcss.config.js"
+    },
+    {
+      "label": "filter.js",
+      "file_type": "code",
+      "source_file": "static/js/filter.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "js_filter",
+      "community": 3,
+      "norm_label": "filter.js"
+    },
+    {
+      "label": "filterPosts()",
+      "file_type": "code",
+      "source_file": "static/js/filter.js",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "js_filter_filterposts",
+      "community": 3,
+      "norm_label": "filterposts()"
+    },
+    {
+      "label": "resetButtonStyles()",
+      "file_type": "code",
+      "source_file": "static/js/filter.js",
+      "source_location": "L40",
+      "_origin": "ast",
+      "id": "js_filter_resetbuttonstyles",
+      "community": 3,
+      "norm_label": "resetbuttonstyles()"
+    },
+    {
+      "label": "setActiveButton()",
+      "file_type": "code",
+      "source_file": "static/js/filter.js",
+      "source_location": "L47",
+      "_origin": "ast",
+      "id": "js_filter_setactivebutton",
+      "community": 3,
+      "norm_label": "setactivebutton()"
+    },
+    {
+      "label": "updateActiveButtons()",
+      "file_type": "code",
+      "source_file": "static/js/filter.js",
+      "source_location": "L52",
+      "_origin": "ast",
+      "id": "js_filter_updateactivebuttons",
+      "community": 3,
+      "norm_label": "updateactivebuttons()"
+    },
+    {
+      "label": "lightbox.js",
+      "file_type": "code",
+      "source_file": "static/js/lightbox.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "js_lightbox",
+      "community": 7,
+      "norm_label": "lightbox.js"
+    },
+    {
+      "label": "closeModal()",
+      "file_type": "code",
+      "source_file": "static/js/lightbox.js",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "js_lightbox_closemodal",
+      "community": 7,
+      "norm_label": "closemodal()"
+    },
+    {
+      "label": "main.js",
+      "file_type": "code",
+      "source_file": "static/js/main.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "js_main",
+      "community": 0,
+      "norm_label": "main.js"
+    },
+    {
+      "label": "openMenu()",
+      "file_type": "code",
+      "source_file": "static/js/main.js",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "js_main_openmenu",
+      "community": 0,
+      "norm_label": "openmenu()"
+    },
+    {
+      "label": "closeMenu()",
+      "file_type": "code",
+      "source_file": "static/js/main.js",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "js_main_closemenu",
+      "community": 0,
+      "norm_label": "closemenu()"
+    },
+    {
+      "label": "handleNavScroll()",
+      "file_type": "code",
+      "source_file": "static/js/main.js",
+      "source_location": "L44",
+      "_origin": "ast",
+      "id": "js_main_handlenavscroll",
+      "community": 0,
+      "norm_label": "handlenavscroll()"
+    },
+    {
+      "label": "updateActiveSection()",
+      "file_type": "code",
+      "source_file": "static/js/main.js",
+      "source_location": "L91",
+      "_origin": "ast",
+      "id": "js_main_updateactivesection",
+      "community": 0,
+      "norm_label": "updateactivesection()"
+    },
+    {
+      "label": "type()",
+      "file_type": "code",
+      "source_file": "static/js/main.js",
+      "source_location": "L133",
+      "_origin": "ast",
+      "id": "js_main_type",
+      "community": 0,
+      "norm_label": "type()"
+    },
+    {
+      "label": "typeRole()",
+      "file_type": "code",
+      "source_file": "static/js/main.js",
+      "source_location": "L156",
+      "_origin": "ast",
+      "id": "js_main_typerole",
+      "community": 0,
+      "norm_label": "typerole()"
+    },
+    {
+      "label": "layoutProseImages()",
+      "file_type": "code",
+      "source_file": "static/js/main.js",
+      "source_location": "L198",
+      "_origin": "ast",
+      "id": "js_main_layoutproseimages",
+      "community": 0,
+      "norm_label": "layoutproseimages()"
+    },
+    {
+      "label": "resizeMatrix()",
+      "file_type": "code",
+      "source_file": "static/js/main.js",
+      "source_location": "L244",
+      "_origin": "ast",
+      "id": "js_main_resizematrix",
+      "community": 0,
+      "norm_label": "resizematrix()"
+    },
+    {
+      "label": "draw()",
+      "file_type": "code",
+      "source_file": "static/js/main.js",
+      "source_location": "L257",
+      "_origin": "ast",
+      "id": "js_main_draw",
+      "community": 0,
+      "norm_label": "draw()"
+    },
+    {
+      "label": "tailwind.config.js",
+      "file_type": "code",
+      "source_file": "tailwind.config.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tailwind_config",
+      "community": 9,
+      "norm_label": "tailwind.config.js"
+    },
+    {
+      "label": "Blog",
+      "file_type": "document",
+      "source_file": "content/blog/_index.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "content_blog__index",
+      "community": 1,
+      "norm_label": "blog"
+    },
+    {
+      "label": "Bug Bounty",
+      "file_type": "document",
+      "source_file": "content/blog/bugbounty/_index.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "content_blog_bugbounty__index",
+      "community": 1,
+      "norm_label": "bug bounty"
+    },
+    {
+      "label": "Open redirect on a login request",
+      "file_type": "document",
+      "source_file": "content/blog/bugbounty/open-redirect-on-login.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "content_blog_bugbounty_open_redirect_on_login",
+      "community": 1,
+      "norm_label": "open redirect on a login request"
+    },
+    {
+      "label": "Reflected XSS in a corporate marketing site",
+      "file_type": "document",
+      "source_file": "content/blog/bugbounty/reflected-xss-corporate-marketing-site.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "content_blog_bugbounty_reflected_xss_corporate_marketing_site",
+      "community": 1,
+      "norm_label": "reflected xss in a corporate marketing site"
+    },
+    {
+      "label": "CTF Writeups",
+      "file_type": "document",
+      "source_file": "content/blog/ctf/_index.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "content_blog_ctf__index",
+      "community": 1,
+      "norm_label": "ctf writeups"
+    },
+    {
+      "label": "Billing",
+      "file_type": "document",
+      "source_file": "content/blog/ctf/thm-billing.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "content_blog_ctf_thm_billing",
+      "community": 1,
+      "norm_label": "billing"
+    },
+    {
+      "label": "Projects",
+      "file_type": "document",
+      "source_file": "content/blog/projects/_index.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "content_blog_projects__index",
+      "community": 1,
+      "norm_label": "projects"
+    },
+    {
+      "label": "Wazuh SIEM Lab",
+      "file_type": "document",
+      "source_file": "content/blog/projects/wazuh-siem-lab.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "content_blog_projects_wazuh_siem_lab",
+      "community": 1,
+      "norm_label": "wazuh siem lab"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".opencode/opencode.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "opencode_opencode",
+      "target": "opencode_opencode_plugin",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".opencode/opencode.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "opencode_opencode",
+      "target": "opencode_opencode_schema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".opencode/package.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "opencode_package",
+      "target": "opencode_package_dependencies",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".opencode/package.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "opencode_package_dependencies",
+      "target": "opencode_package_dependencies_opencode_ai_plugin",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "package",
+      "target": "package_devdependencies",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "package",
+      "target": "package_name",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "package",
+      "target": "package_private",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "package",
+      "target": "package_scripts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "package",
+      "target": "package_version",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_build",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_build_css",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_dev",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_autoprefixer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_postcss",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_postcss_cli",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_tailwindcss",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "static/js/filter.js",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "js_filter",
+      "target": "js_filter_filterposts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "static/js/filter.js",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "js_filter",
+      "target": "js_filter_resetbuttonstyles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "static/js/filter.js",
+      "source_location": "L47",
+      "weight": 1.0,
+      "source": "js_filter",
+      "target": "js_filter_setactivebutton",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "static/js/filter.js",
+      "source_location": "L52",
+      "weight": 1.0,
+      "source": "js_filter",
+      "target": "js_filter_updateactivebuttons",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "static/js/filter.js",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "js_filter_filterposts",
+      "target": "js_filter_updateactivebuttons",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "static/js/filter.js",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "js_filter_updateactivebuttons",
+      "target": "js_filter_resetbuttonstyles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "static/js/filter.js",
+      "source_location": "L55",
+      "weight": 1.0,
+      "source": "js_filter_updateactivebuttons",
+      "target": "js_filter_setactivebutton",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "static/js/lightbox.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "js_lightbox",
+      "target": "js_lightbox_closemodal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "static/js/main.js",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "js_main",
+      "target": "js_main_closemenu",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "static/js/main.js",
+      "source_location": "L257",
+      "weight": 1.0,
+      "source": "js_main",
+      "target": "js_main_draw",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "static/js/main.js",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "js_main",
+      "target": "js_main_handlenavscroll",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "static/js/main.js",
+      "source_location": "L198",
+      "weight": 1.0,
+      "source": "js_main",
+      "target": "js_main_layoutproseimages",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "static/js/main.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "js_main",
+      "target": "js_main_openmenu",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "static/js/main.js",
+      "source_location": "L244",
+      "weight": 1.0,
+      "source": "js_main",
+      "target": "js_main_resizematrix",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "static/js/main.js",
+      "source_location": "L133",
+      "weight": 1.0,
+      "source": "js_main",
+      "target": "js_main_type",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "static/js/main.js",
+      "source_location": "L156",
+      "weight": 1.0,
+      "source": "js_main",
+      "target": "js_main_typerole",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "static/js/main.js",
+      "source_location": "L91",
+      "weight": 1.0,
+      "source": "js_main",
+      "target": "js_main_updateactivesection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/blog/bugbounty/_index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "content_blog_bugbounty__index",
+      "target": "content_blog__index"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/blog/ctf/_index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "content_blog_ctf__index",
+      "target": "content_blog__index"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/blog/projects/_index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "content_blog_projects__index",
+      "target": "content_blog__index"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/blog/bugbounty/open-redirect-on-login.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "content_blog_bugbounty_open_redirect_on_login",
+      "target": "content_blog_bugbounty__index"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/blog/bugbounty/reflected-xss-corporate-marketing-site.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "content_blog_bugbounty_reflected_xss_corporate_marketing_site",
+      "target": "content_blog_bugbounty__index"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/blog/ctf/thm-billing.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "content_blog_ctf_thm_billing",
+      "target": "content_blog_ctf__index"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/blog/projects/wazuh-siem-lab.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "content_blog_projects_wazuh_siem_lab",
+      "target": "content_blog_projects__index"
+    }
+  ],
+  "hyperedges": []
+}

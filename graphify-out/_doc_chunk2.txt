@@ -1,0 +1,10 @@
+/home/tinl/Documents/coding/portfolio/layouts/_default/single.html
+/home/tinl/Documents/coding/portfolio/layouts/index.html
+/home/tinl/Documents/coding/portfolio/layouts/partials/badge-difficulty.html
+/home/tinl/Documents/coding/portfolio/layouts/partials/badge-platform.html
+/home/tinl/Documents/coding/portfolio/layouts/partials/badge-tag.html
+/home/tinl/Documents/coding/portfolio/layouts/partials/footer.html
+/home/tinl/Documents/coding/portfolio/layouts/partials/head.html
+/home/tinl/Documents/coding/portfolio/layouts/partials/nav.html
+/home/tinl/Documents/coding/portfolio/layouts/partials/post-card.html
+/home/tinl/Documents/coding/portfolio/static/robots.txt

@@ -1,0 +1,9 @@
+{{ $difficulty := . }}
+{{ $capitalized := $difficulty | title }}
+{{ $colors := dict
+  "easy" "bg-green-500/20 text-green-400 border-green-500/30"
+  "medium" "bg-yellow-500/20 text-yellow-400 border-yellow-500/30"
+  "hard" "bg-red-500/20 text-red-400 border-red-500/30"
+}}
+{{ $color := index $colors $difficulty | default "bg-gray-500/20 text-gray-400 border-gray-500/30" }}
+<span class="text-xs font-mono px-2 py-1 rounded border {{ $color }}">{{ $capitalized }}</span>

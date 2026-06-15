@@ -1,0 +1,66 @@
+baseURL = "https://tinl-site.netlify.app"
+languageCode = "en-us"
+title = "Tin Lucic"
+
+[taxonomies]
+  tag = "tags"
+
+[markup]
+  [markup.highlight]
+    style = "dracula"
+    lineNos = false
+    noClasses = true
+  [markup.goldmark.parser]
+    wrapStandAloneImageWithinParagraph = false
+
+[params]
+  description = "Web security researcher & cybersecurity professional"
+  ga_id = "G-XXXXXXXXXX"
+
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "About"
+  url = "/#about"
+  weight = 2
+
+[[menu.main]]
+  name = "Skills"
+  url = "/#skills"
+  weight = 3
+
+[[menu.main]]
+  name = "Blog"
+  url = "/blog"
+  weight = 5
+
+[[menu.main]]
+  name = "All Posts"
+  parent = "Blog"
+  url = "/blog/"
+  weight = 1
+
+[[menu.main]]
+  name = "CTF"
+  parent = "Blog"
+  url = "/blog/ctf/"
+  weight = 2
+
+[[menu.main]]
+  name = "Bug Bounty"
+  parent = "Blog"
+  url = "/blog/bugbounty/"
+  weight = 3
+
+[[menu.main]]
+  name = "Projects"
+  url = "/#projects"
+  weight = 4
+
+[[menu.main]]
+  name = "Contact"
+  url = "/#contact"
+  weight = 7

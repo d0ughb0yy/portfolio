@@ -1,0 +1,37 @@
+{{ $formattedDate := .Date.Format "Jan 2, 2006" }}
+{{ $tags := "" }}
+{{ with .Params.tags }}{{ $tags = delimit . "," }}{{ end }}
+
+{{ $urlParts := split (strings.TrimRight .RelPermalink "/") "/" }}
+{{ $blogSection := index $urlParts (sub (len $urlParts) 2) }}
+<article class="post-card group opacity-0 animate-fade-in-up" data-category="{{ $blogSection }}" data-tags="{{ $tags }}" data-platform="{{ .Params.ctfPlatform }}" data-difficulty="{{ .Params.difficulty | title }}">
+  <a href="{{ .RelPermalink }}" class="block relative p-8 rounded-xl bg-surface border border-border transition-all duration-300 hover:border-accent hover:shadow-accent-glow">
+    <div class="relative z-10">
+      <div class="flex items-center gap-2 mb-3 flex-wrap">
+        {{ if .Params.ctfPlatform }}
+          {{ partial "badge-platform" .Params.ctfPlatform }}
+        {{ end }}
+        {{ if .Params.difficulty }}
+          {{ partial "badge-difficulty" .Params.difficulty }}
+        {{ end }}
+        {{ if or (in .RelPermalink "/bugbounty/") (in .RelPermalink "/projects/") }}{{ if .Params.tags }}{{ range first 3 .Params.tags }}{{ partial "badge-tag" . }}{{ end }}{{ end }}{{ end }}
+      </div>
+
+      <h2 class="font-heading text-2xl font-semibold mb-4 text-text-primary group-hover:text-accent transition-colors duration-300">
+        {{ .Title }}
+      </h2>
+      <p class="text-text-muted mb-6 leading-relaxed line-clamp-2">
+        {{ .Params.description }}
+      </p>
+
+      <div class="flex items-center justify-between pt-4 border-t border-border">
+        <time class="text-text-dim text-sm flex items-center gap-2" datetime="{{ .Date.Format "2006-01-02" }}">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+          </svg>
+          {{ $formattedDate }}
+        </time>
+      </div>
+    </div>
+  </a>
+</article>

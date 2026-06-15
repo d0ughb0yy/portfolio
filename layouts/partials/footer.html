@@ -1,0 +1,17 @@
+<footer class="border-t border-border mt-16">
+  <div class="max-w-6xl mx-auto px-6 py-8 flex items-center justify-between flex-wrap gap-4">
+    <div class="flex items-center gap-4">
+      <p class="text-xs md:text-sm text-text-dim">
+        &copy; <span id="year"></span> Tin Lučić. All rights reserved.
+      </p>
+    </div>
+    <nav class="flex gap-6 flex-wrap" aria-label="Footer navigation">
+      {{ range .Site.Menus.main }}
+      <a href="{{ .URL }}" class="text-xs md:text-sm text-text-muted hover:text-text-primary transition-all duration-200"
+         {{ if hasPrefix .URL "https" }}target="_blank" rel="noopener noreferrer"{{ end }}>
+        {{ .Name }}
+      </a>
+      {{ end }}
+    </nav>
+  </div>
+</footer>

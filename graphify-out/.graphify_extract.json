@@ -1,0 +1,831 @@
+{
+  "nodes": [
+    {
+      "id": "opencode_opencode",
+      "label": "opencode.json",
+      "file_type": "code",
+      "source_file": ".opencode/opencode.json",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "opencode_opencode_schema",
+      "label": "$schema",
+      "file_type": "code",
+      "source_file": ".opencode/opencode.json",
+      "source_location": "L2",
+      "_origin": "ast"
+    },
+    {
+      "id": "opencode_opencode_plugin",
+      "label": "plugin",
+      "file_type": "code",
+      "source_file": ".opencode/opencode.json",
+      "source_location": "L3",
+      "_origin": "ast"
+    },
+    {
+      "id": "opencode_package",
+      "label": "package.json",
+      "file_type": "code",
+      "source_file": ".opencode/package.json",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "opencode_package_dependencies",
+      "label": "dependencies",
+      "file_type": "code",
+      "source_file": ".opencode/package.json",
+      "source_location": "L2",
+      "_origin": "ast"
+    },
+    {
+      "id": "opencode_package_dependencies_opencode_ai_plugin",
+      "label": "@opencode-ai/plugin",
+      "file_type": "code",
+      "source_file": ".opencode/package.json",
+      "source_location": "L3",
+      "_origin": "ast"
+    },
+    {
+      "id": "package",
+      "label": "package.json",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "package_name",
+      "label": "name",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L2",
+      "_origin": "ast"
+    },
+    {
+      "id": "package_version",
+      "label": "version",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L3",
+      "_origin": "ast"
+    },
+    {
+      "id": "package_private",
+      "label": "private",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L4",
+      "_origin": "ast"
+    },
+    {
+      "id": "package_scripts",
+      "label": "scripts",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L5",
+      "_origin": "ast"
+    },
+    {
+      "id": "package_scripts_build_css",
+      "label": "build:css",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L6",
+      "_origin": "ast"
+    },
+    {
+      "id": "package_scripts_dev",
+      "label": "dev",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L7",
+      "_origin": "ast"
+    },
+    {
+      "id": "package_scripts_build",
+      "label": "build",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L8",
+      "_origin": "ast"
+    },
+    {
+      "id": "package_devdependencies",
+      "label": "devDependencies",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L10",
+      "_origin": "ast"
+    },
+    {
+      "id": "package_devdependencies_autoprefixer",
+      "label": "autoprefixer",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L11",
+      "_origin": "ast"
+    },
+    {
+      "id": "package_devdependencies_postcss",
+      "label": "postcss",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L12",
+      "_origin": "ast"
+    },
+    {
+      "id": "package_devdependencies_postcss_cli",
+      "label": "postcss-cli",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L13",
+      "_origin": "ast"
+    },
+    {
+      "id": "package_devdependencies_tailwindcss",
+      "label": "tailwindcss",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L14",
+      "_origin": "ast"
+    },
+    {
+      "id": "postcss_config",
+      "label": "postcss.config.js",
+      "file_type": "code",
+      "source_file": "postcss.config.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_filter",
+      "label": "filter.js",
+      "file_type": "code",
+      "source_file": "static/js/filter.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_filter_filterposts",
+      "label": "filterPosts()",
+      "file_type": "code",
+      "source_file": "static/js/filter.js",
+      "source_location": "L16",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_filter_resetbuttonstyles",
+      "label": "resetButtonStyles()",
+      "file_type": "code",
+      "source_file": "static/js/filter.js",
+      "source_location": "L40",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_filter_setactivebutton",
+      "label": "setActiveButton()",
+      "file_type": "code",
+      "source_file": "static/js/filter.js",
+      "source_location": "L47",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_filter_updateactivebuttons",
+      "label": "updateActiveButtons()",
+      "file_type": "code",
+      "source_file": "static/js/filter.js",
+      "source_location": "L52",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_lightbox",
+      "label": "lightbox.js",
+      "file_type": "code",
+      "source_file": "static/js/lightbox.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_lightbox_closemodal",
+      "label": "closeModal()",
+      "file_type": "code",
+      "source_file": "static/js/lightbox.js",
+      "source_location": "L9",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_main",
+      "label": "main.js",
+      "file_type": "code",
+      "source_file": "static/js/main.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_main_openmenu",
+      "label": "openMenu()",
+      "file_type": "code",
+      "source_file": "static/js/main.js",
+      "source_location": "L11",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_main_closemenu",
+      "label": "closeMenu()",
+      "file_type": "code",
+      "source_file": "static/js/main.js",
+      "source_location": "L20",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_main_handlenavscroll",
+      "label": "handleNavScroll()",
+      "file_type": "code",
+      "source_file": "static/js/main.js",
+      "source_location": "L44",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_main_updateactivesection",
+      "label": "updateActiveSection()",
+      "file_type": "code",
+      "source_file": "static/js/main.js",
+      "source_location": "L91",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_main_type",
+      "label": "type()",
+      "file_type": "code",
+      "source_file": "static/js/main.js",
+      "source_location": "L133",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_main_typerole",
+      "label": "typeRole()",
+      "file_type": "code",
+      "source_file": "static/js/main.js",
+      "source_location": "L156",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_main_layoutproseimages",
+      "label": "layoutProseImages()",
+      "file_type": "code",
+      "source_file": "static/js/main.js",
+      "source_location": "L198",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_main_resizematrix",
+      "label": "resizeMatrix()",
+      "file_type": "code",
+      "source_file": "static/js/main.js",
+      "source_location": "L244",
+      "_origin": "ast"
+    },
+    {
+      "id": "js_main_draw",
+      "label": "draw()",
+      "file_type": "code",
+      "source_file": "static/js/main.js",
+      "source_location": "L257",
+      "_origin": "ast"
+    },
+    {
+      "id": "tailwind_config",
+      "label": "tailwind.config.js",
+      "file_type": "code",
+      "source_file": "tailwind.config.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "content_blog__index",
+      "label": "Blog",
+      "file_type": "document",
+      "source_file": "content/blog/_index.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_blog_bugbounty__index",
+      "label": "Bug Bounty",
+      "file_type": "document",
+      "source_file": "content/blog/bugbounty/_index.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_blog_bugbounty_open_redirect_on_login",
+      "label": "Open redirect on a login request",
+      "file_type": "document",
+      "source_file": "content/blog/bugbounty/open-redirect-on-login.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_blog_bugbounty_reflected_xss_corporate_marketing_site",
+      "label": "Reflected XSS in a corporate marketing site",
+      "file_type": "document",
+      "source_file": "content/blog/bugbounty/reflected-xss-corporate-marketing-site.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_blog_ctf__index",
+      "label": "CTF Writeups",
+      "file_type": "document",
+      "source_file": "content/blog/ctf/_index.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_blog_ctf_thm_billing",
+      "label": "Billing",
+      "file_type": "document",
+      "source_file": "content/blog/ctf/thm-billing.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_blog_projects__index",
+      "label": "Projects",
+      "file_type": "document",
+      "source_file": "content/blog/projects/_index.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_blog_projects_wazuh_siem_lab",
+      "label": "Wazuh SIEM Lab",
+      "file_type": "document",
+      "source_file": "content/blog/projects/wazuh-siem-lab.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "opencode_opencode",
+      "target": "opencode_opencode_schema",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".opencode/opencode.json",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "opencode_opencode",
+      "target": "opencode_opencode_plugin",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".opencode/opencode.json",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "opencode_opencode_plugin",
+      "target": "ref_superpowers_git_https_github_com_obra_superpowers_git",
+      "relation": "extends",
+      "confidence": "EXTRACTED",
+      "source_file": ".opencode/opencode.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "opencode_package",
+      "target": "opencode_package_dependencies",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".opencode/package.json",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "opencode_package_dependencies",
+      "target": "opencode_package_dependencies_opencode_ai_plugin",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".opencode/package.json",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "opencode_package_dependencies_opencode_ai_plugin",
+      "target": "opencode_ai_plugin",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": ".opencode/package.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "package",
+      "target": "package_name",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "package",
+      "target": "package_version",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "package",
+      "target": "package_private",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "package",
+      "target": "package_scripts",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "package_scripts",
+      "target": "package_scripts_build_css",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "package_scripts",
+      "target": "package_scripts_dev",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "package_scripts",
+      "target": "package_scripts_build",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "package",
+      "target": "package_devdependencies",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_autoprefixer",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "package_devdependencies_autoprefixer",
+      "target": "autoprefixer",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L11",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_postcss",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "package_devdependencies_postcss",
+      "target": "postcss",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_postcss_cli",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "package_devdependencies_postcss_cli",
+      "target": "postcss_cli",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_tailwindcss",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "package_devdependencies_tailwindcss",
+      "target": "tailwindcss",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "js_filter",
+      "target": "js_filter_filterposts",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "static/js/filter.js",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "js_filter",
+      "target": "js_filter_resetbuttonstyles",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "static/js/filter.js",
+      "source_location": "L40",
+      "weight": 1.0
+    },
+    {
+      "source": "js_filter",
+      "target": "js_filter_setactivebutton",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "static/js/filter.js",
+      "source_location": "L47",
+      "weight": 1.0
+    },
+    {
+      "source": "js_filter",
+      "target": "js_filter_updateactivebuttons",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "static/js/filter.js",
+      "source_location": "L52",
+      "weight": 1.0
+    },
+    {
+      "source": "js_filter_filterposts",
+      "target": "js_filter_updateactivebuttons",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "static/js/filter.js",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "js_filter_updateactivebuttons",
+      "target": "js_filter_setactivebutton",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "static/js/filter.js",
+      "source_location": "L55",
+      "weight": 1.0
+    },
+    {
+      "source": "js_filter_updateactivebuttons",
+      "target": "js_filter_resetbuttonstyles",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "static/js/filter.js",
+      "source_location": "L57",
+      "weight": 1.0
+    },
+    {
+      "source": "js_lightbox",
+      "target": "js_lightbox_closemodal",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "static/js/lightbox.js",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "js_main",
+      "target": "js_main_openmenu",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "static/js/main.js",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "js_main",
+      "target": "js_main_closemenu",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "static/js/main.js",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "js_main",
+      "target": "js_main_handlenavscroll",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "static/js/main.js",
+      "source_location": "L44",
+      "weight": 1.0
+    },
+    {
+      "source": "js_main",
+      "target": "js_main_updateactivesection",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "static/js/main.js",
+      "source_location": "L91",
+      "weight": 1.0
+    },
+    {
+      "source": "js_main",
+      "target": "js_main_type",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "static/js/main.js",
+      "source_location": "L133",
+      "weight": 1.0
+    },
+    {
+      "source": "js_main",
+      "target": "js_main_typerole",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "static/js/main.js",
+      "source_location": "L156",
+      "weight": 1.0
+    },
+    {
+      "source": "js_main",
+      "target": "js_main_layoutproseimages",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "static/js/main.js",
+      "source_location": "L198",
+      "weight": 1.0
+    },
+    {
+      "source": "js_main",
+      "target": "js_main_resizematrix",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "static/js/main.js",
+      "source_location": "L244",
+      "weight": 1.0
+    },
+    {
+      "source": "js_main",
+      "target": "js_main_draw",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "static/js/main.js",
+      "source_location": "L257",
+      "weight": 1.0
+    },
+    {
+      "source": "content_blog_bugbounty__index",
+      "target": "content_blog__index",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/blog/bugbounty/_index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "content_blog_bugbounty_open_redirect_on_login",
+      "target": "content_blog_bugbounty__index",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/blog/bugbounty/open-redirect-on-login.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "content_blog_bugbounty_reflected_xss_corporate_marketing_site",
+      "target": "content_blog_bugbounty__index",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/blog/bugbounty/reflected-xss-corporate-marketing-site.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "content_blog_ctf__index",
+      "target": "content_blog__index",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/blog/ctf/_index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "content_blog_ctf_thm_billing",
+      "target": "content_blog_ctf__index",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/blog/ctf/thm-billing.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "content_blog_projects__index",
+      "target": "content_blog__index",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/blog/projects/_index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "content_blog_projects_wazuh_siem_lab",
+      "target": "content_blog_projects__index",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/blog/projects/wazuh-siem-lab.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

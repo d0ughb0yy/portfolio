@@ -1,0 +1,167 @@
+{
+  "nodes": [
+    {
+      "id": "content_blog__index",
+      "label": "Blog",
+      "file_type": "document",
+      "source_file": "content/blog/_index.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_blog_bugbounty__index",
+      "label": "Bug Bounty",
+      "file_type": "document",
+      "source_file": "content/blog/bugbounty/_index.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_blog_bugbounty_open_redirect_on_login",
+      "label": "Open redirect on a login request",
+      "file_type": "document",
+      "source_file": "content/blog/bugbounty/open-redirect-on-login.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_blog_bugbounty_reflected_xss_corporate_marketing_site",
+      "label": "Reflected XSS in a corporate marketing site",
+      "file_type": "document",
+      "source_file": "content/blog/bugbounty/reflected-xss-corporate-marketing-site.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_blog_ctf__index",
+      "label": "CTF Writeups",
+      "file_type": "document",
+      "source_file": "content/blog/ctf/_index.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_blog_ctf_thm_billing",
+      "label": "Billing",
+      "file_type": "document",
+      "source_file": "content/blog/ctf/thm-billing.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_blog_projects__index",
+      "label": "Projects",
+      "file_type": "document",
+      "source_file": "content/blog/projects/_index.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "content_blog_projects_wazuh_siem_lab",
+      "label": "Wazuh SIEM Lab",
+      "file_type": "document",
+      "source_file": "content/blog/projects/wazuh-siem-lab.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "content_blog_bugbounty__index",
+      "target": "content_blog__index",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/blog/bugbounty/_index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "content_blog_bugbounty_open_redirect_on_login",
+      "target": "content_blog_bugbounty__index",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/blog/bugbounty/open-redirect-on-login.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "content_blog_bugbounty_reflected_xss_corporate_marketing_site",
+      "target": "content_blog_bugbounty__index",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/blog/bugbounty/reflected-xss-corporate-marketing-site.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "content_blog_ctf__index",
+      "target": "content_blog__index",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/blog/ctf/_index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "content_blog_ctf_thm_billing",
+      "target": "content_blog_ctf__index",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/blog/ctf/thm-billing.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "content_blog_projects__index",
+      "target": "content_blog__index",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/blog/projects/_index.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "content_blog_projects_wazuh_siem_lab",
+      "target": "content_blog_projects__index",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "content/blog/projects/wazuh-siem-lab.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

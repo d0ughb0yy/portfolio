@@ -1,0 +1,26 @@
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+{{ if isset .Params "description" -}}
+<meta name="description" content="{{ .Params.description }}" />
+{{ else -}}
+<meta name="description" content="{{ .Site.Params.description }}" />
+{{ end -}}
+<link rel="icon" type="image/svg+xml" href="/favicons/favicon.svg" />
+<link rel="icon" type="image/png" sizes="48x48" href="/favicons/favicon-48x48.png" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png" />
+<link rel="icon" type="image/png" sizes="144x144" href="/favicons/favicon-144x144.png" />
+<link rel="icon" type="image/png" sizes="192x192" href="/favicons/favicon-192x192.png" />
+<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ if .Title }}{{ .Title }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/css/input.css" />
+{{ if .Site.Params.ga_id -}}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.ga_id }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '{{ .Site.Params.ga_id }}');
+</script>
+{{ end -}}

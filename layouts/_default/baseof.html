@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{ partial "head" . }}
+</head>
+<body class="min-h-screen bg-background font-sans">
+  {{ if .IsHome }}
+  <canvas id="matrix-canvas" aria-hidden="true"></canvas>
+  {{ end }}
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="fixed top-1/4 -left-32 w-96 h-96 bg-accent/5 rounded-full blur-3xl pointer-events-none z-0" aria-hidden="true"></div>
+  <div class="fixed bottom-1/4 -right-32 w-96 h-96 bg-purple-500/5 rounded-full blur-3xl pointer-events-none z-0" aria-hidden="true"></div>
+  
+  {{ partial "nav" . }}
+
+  <div class="flex flex-col min-h-screen pt-[72px]">
+    <main id="content" class="flex-1 max-w-6xl w-full mx-auto px-4 md:px-6">
+      {{ block "main" . }}{{ end }}
+    </main>
+
+    {{ partial "footer" . }}
+  </div>
+
+  <button id="back-to-top" class="fixed bottom-6 right-6 z-40 w-12 h-12 bg-[rgba(34,197,94,0.1)] border border-[rgba(34,197,94,0.4)] rounded-full flex items-center justify-center text-text-primary hover:bg-[rgba(34,197,94,0.2)] hover:border-[rgba(34,197,94,0.7)] hover:shadow-[0_0_20px_rgba(34,197,94,0.4)] transition-all duration-300 opacity-0 invisible translate-y-4" aria-label="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path>
+    </svg>
+  </button>
+
+  <dialog id="global-image-modal" class="backdrop:bg-black/90 p-0 border-0 bg-transparent" style="position:relative">
+    <img id="global-modal-image" src="" alt="" class="max-w-[90vw] max-h-[85vh] object-contain rounded-lg" />
+    <button id="global-modal-close" class="absolute top-1 right-1 z-10 w-8 h-8 bg-surface/80 rounded-full flex items-center justify-center text-text-primary hover:text-text-primary hover:bg-surface transition-colors" aria-label="Close modal">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 6l12 12M18 6l-12 12"></path>
+      </svg>
+    </button>
+  </dialog>
+
+  <script src="/js/lightbox.js"></script>
+  <script src="/js/main.js"></script>
+  {{ if or (eq .Kind "home") (eq .Kind "section") }}
+  <script src="/js/filter.js"></script>
+  {{ end }}
+</body>
+</html>
