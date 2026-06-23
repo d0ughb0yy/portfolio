@@ -610,6 +610,7 @@ video {
         box-shadow: none !important;
     }
 .prose {
+  overflow-wrap: break-word;
   line-height: 1.625;
   --tw-text-opacity: 1;
   color: rgb(203 213 225 / var(--tw-text-opacity, 1));
@@ -640,6 +641,7 @@ video {
   margin-bottom: 1rem;
 }
 .prose a {
+  overflow-wrap: break-word;
   --tw-text-opacity: 1;
   color: rgb(34 197 94 / var(--tw-text-opacity, 1));
 }
