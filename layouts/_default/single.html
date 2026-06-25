@@ -1,34 +1,39 @@
 {{ define "main" }}
-<div class="py-8">
-<article class="bg-surface border border-border rounded-xl p-8">
-  <header class="mb-8">
-    <div class="flex items-center gap-2 mb-4">
-      {{ if .Params.ctfPlatform }}{{ partial "badge-platform" .Params.ctfPlatform }}{{ end }}
-      {{ if .Params.difficulty }}{{ partial "badge-difficulty" .Params.difficulty }}{{ end }}
-    </div>
-    <h1 class="text-3xl font-bold text-text-primary mb-4">{{ .Title }}</h1>
-    <time class="text-text-muted text-sm" datetime="{{ .Date.Format "2006-01-02" }}">
-      {{ .Date.Format "January 2, 2006" }}
-    </time>
-  </header>
+<article class="project-card project-card-full">
+  <div class="project-header">
+    {{ if .Params.difficulty }}
+    {{ partial "badge-difficulty" .Params.difficulty }}
+    {{ end }}
+    {{ if .Params.ctfPlatform }}
+    {{ partial "badge-platform" .Params.ctfPlatform }}
+    {{ end }}
+  </div>
 
-  <div class="prose max-w-none">
+  <h1 class="project-title" style="font-size:24px;margin-bottom:12px">{{ .Title }}</h1>
+
+  {{ with .Params.description }}
+  <p class="project-desc" style="margin-bottom:24px">{{ . }}</p>
+  {{ end }}
+
+  <time class="text-text-dim text-sm flex items-center gap-2 mb-8" datetime="{{ .Date.Format " 2006-01-02" }}">
+    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+    </svg>
+    {{ .Date.Format "January 2, 2006" }}
+  </time>
+
+  <hr style="border-color: rgba(51,65,85,0.4);" class="mt-8 mb-0">
+
+  <div class="prose max-w-none mb-8">
     {{ .Content }}
   </div>
 
-  {{ if and .Params.tags (not (in .CurrentSection.RelPermalink "/ctf/")) }}
-  <footer class="mt-8 pt-8 border-t border-border bg-[rgba(15,23,42,0.4)] backdrop-blur-sm -mx-8 px-8 pb-8">
-    <div class="flex flex-wrap gap-2">
-      {{ range .Params.tags }}
-        {{ partial "badge-tag" . }}
-      {{ end }}
-    </div>
-  </footer>
-  {{ end }}
+  <hr style="border-color: rgba(51,65,85,0.4);" class="mt-8 mb-0">
 
-  <div class="mt-8 pt-6 border-t border-border">
-    <a href="{{ .CurrentSection.RelPermalink }}" class="text-accent hover:underline text-sm">← Back to {{ .CurrentSection.Title }}</a>
+
+  <div class="pt-8 mb-2 space-y-8 project-links">
+    <a style="font-size: 14px;" href="{{ .CurrentSection.RelPermalink }}">← Back to {{ .CurrentSection.Title }}</a>
   </div>
 </article>
-</div>
 {{ end }}

@@ -1,0 +1,29 @@
+{{ $blogSection := "" }}
+{{ if in .RelPermalink "/bugbounty/" }}{{ $blogSection = "bugbounty" }}
+{{ else if in .RelPermalink "/ctf/" }}{{ $blogSection = "ctf" }}
+{{ else if in .RelPermalink "/projects/" }}{{ $blogSection = "projects" }}
+{{ else if in .RelPermalink "/learning-resources/" }}{{ $blogSection = "learning-resources" }}
+{{ end }}
+
+{{ $tags := "" }}
+{{ with .Params.tags }}{{ $tags = delimit . "," }}{{ end }}
+
+<article class="project-card h-full flex flex-col" data-category="{{ $blogSection }}" data-tags="{{ $tags }}" data-platform="{{ .Params.ctfPlatform }}" data-difficulty="{{ .Params.difficulty | title }}">
+  <div class="flex items-center gap-2 mb-3 flex-wrap">
+    {{ if .Params.ctfPlatform }}
+      {{ partial "badge-platform" .Params.ctfPlatform }}
+    {{ end }}
+    {{ if .Params.difficulty }}
+      {{ partial "badge-difficulty" .Params.difficulty }}
+    {{ end }}
+    {{ if or (in .RelPermalink "/bugbounty/") (in .RelPermalink "/projects/") (in .RelPermalink "/learning-resources/") }}{{ if .Params.tags }}{{ range first 3 .Params.tags }}{{ partial "badge-tag" . }}{{ end }}{{ end }}{{ end }}
+  </div>
+
+  <h3 class="project-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+  <p class="project-desc flex-1">
+    {{ .Params.description }}
+  </p>
+  <div class="project-links">
+    <a href="{{ .RelPermalink }}">Read More →</a>
+  </div>
+</article>

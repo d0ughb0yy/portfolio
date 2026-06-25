@@ -361,7 +361,29 @@
   </div>
 </section>
 
-<h2 class="section-title">Contact Me!</h2>
+<h2 class="section-title">Latest Posts</h2>
+<section id="latest-posts" class="section section-alt">
+  <div class="container">
+    <div class="projects-grid">
+      {{ $posts := where .Site.RegularPages "Section" "blog" }}
+      {{ range first 4 $posts.ByDate.Reverse }}
+      {{ partial "home-post-card.html" . }}
+      {{ end }}
+    </div>
+    <div class="view-all-posts" style="text-align:center;margin-top:48px">
+      <a href="/blog" class="btn btn-primary">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path d="M4 4h8M4 8h6M2 12V5a3 3 0 013-3h6a3 3 0 013 3v7" />
+          <polyline points="4 12 2 12 2 14h8v-2z" />
+        </svg>
+        View All Posts
+      </a>
+    </div>
+  </div>
+</section>
+
+<h2 class="section-title" style="margin-top:48px">Contact Me!</h2>
 
 <section id="contact" class="section section-alt">
   <div class="container">

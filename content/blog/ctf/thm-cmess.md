@@ -6,6 +6,7 @@ ctfPlatform: TryHackMe
 difficulty: medium
 tags: [Linux, GilaCMS, Subdomain, Wildcard, Tar, CVE]
 ---
+
 ## Overview
 
 A Ubuntu machine running Gila CMS where the initial access path involved subdomain enumeration to find exposed credentials, and privilege escalation exploited a tar wildcard vulnerability in a cron job.

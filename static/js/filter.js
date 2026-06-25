@@ -6,7 +6,7 @@
     var tagBtns = document.querySelectorAll('.tag-btn');
     var platformBtns = document.querySelectorAll('.platform-btn');
     var difficultyBtns = document.querySelectorAll('.difficulty-btn');
-    var postCards = document.querySelectorAll('.post-card');
+    var postCards = document.querySelectorAll('.project-card');
 
     var activeCategory = 'all';
     var activeTag = 'all';
